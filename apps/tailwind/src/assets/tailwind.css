@@ -1,3 +1,9 @@
 @tailwind base;
+
+body {
+    font-family: sans-serif;
+    @apply bg-gradient-to-b from-blue-50 via-white to-white;
+}
+
 @tailwind components;
 @tailwind utilities;
