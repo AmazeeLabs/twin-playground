@@ -1,7 +1,6 @@
 {
-  "name": "@amazeelabs/paraplegie.ch",
+  "name": "@amazeelabs/twin-playground-tailwind",
   "private": true,
-  "description": "At the Swiss Paraplegic Foundation and its seven subsidiaries and two partner organisations, paraplegics receive support from over 1,600 qualified employees.",
   "version": "0.1.0",
   "author": "Amazee Labs <developers@amazeelabs.com>",
   "main": "index.ts",
