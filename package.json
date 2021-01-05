@@ -1,0 +1,37 @@
+{
+  "name": "root",
+  "private": true,
+  "dependencies": {
+    "prettier": "^2.1.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitizen": "^4.2.1",
+    "husky": "^4.3.0",
+    "lerna": "^3.22.1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "commit": "yarn git-cz",
+    "test": "yarn lerna run test --since --stream --concurrency=1"
+  }
+}
