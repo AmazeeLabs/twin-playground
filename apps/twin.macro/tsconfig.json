@@ -15,10 +15,10 @@
     "noEmit": true,
     "jsx": "react",
     "typeRoots": ["node_modules/@types", "../../node_modules/@types"],
+    "types": ["twin.d.ts"],
     "sourceMap": true,
     "baseUrl": "."
   },
-  "files": ["twin.d.ts"],
   "ts-node": {
     "transpileOnly": true
   }
