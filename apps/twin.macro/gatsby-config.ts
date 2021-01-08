@@ -10,4 +10,12 @@ export const siteMetadata = {
   author: '@amazeelabs',
 };
 
-export const plugins = ['gatsby-plugin-styled-components'];
+export const plugins = [
+  'gatsby-plugin-styled-components',
+  {
+    resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+    options: {
+      analyzerMode: 'static',
+    },
+  },
+];

@@ -23,6 +23,7 @@
     "@types/styled-components": "^5.1.7",
     "eslint": "^7.9.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.18",
     "ts-loader": "^8.0.11",
     "ts-node": "^9.0.0",
     "tsconfig-paths": "^3.9.0",
@@ -42,7 +43,7 @@
     "lint:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "start": "yarn run develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -p 9001",
     "clean": "gatsby clean"
   },
   "babelMacros": {
