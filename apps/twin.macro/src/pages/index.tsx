@@ -1,6 +1,7 @@
 import React from 'react';
 import 'twin.macro';
 import { Layout } from '../components/Layout';
+import { Button } from '../components/Button';
 
 const Index: React.FC = () => (
   <Layout>
@@ -17,29 +18,6 @@ const Index: React.FC = () => (
                   alt=""
                 />
               </a>
-            </div>
-            <div tw="-mr-2 -my-2 md:hidden">
-              <button
-                type="button"
-                tw="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-              >
-                <span tw="sr-only">Open menu</span>
-                <svg
-                  tw="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
             </div>
             <nav tw="hidden md:flex space-x-10">
               <div tw="relative">
@@ -117,240 +95,6 @@ const Index: React.FC = () => (
             </div>
           </div>
         </div>
-        <div tw="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-          <div tw="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-            <div tw="pt-5 pb-6 px-5">
-              <div tw="flex items-center justify-between">
-                <div>
-                  <img
-                    tw="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                    alt="Workflow"
-                  />
-                </div>
-                <div tw="-mr-2">
-                  <button
-                    type="button"
-                    tw="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-                  >
-                    <span tw="sr-only">Close menu</span>
-                    <svg
-                      tw="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div tw="mt-6">
-                <nav tw="grid gap-y-8">
-                  <a
-                    href="#"
-                    tw="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                  >
-                    <svg
-                      tw="flex-shrink-0 h-6 w-6 text-blue-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                      />
-                    </svg>
-                    <span tw="ml-3 text-base font-medium text-gray-900">
-                      Analytics
-                    </span>
-                  </a>
-
-                  <a
-                    href="#"
-                    tw="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                  >
-                    <svg
-                      tw="flex-shrink-0 h-6 w-6 text-blue-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-                      />
-                    </svg>
-                    <span tw="ml-3 text-base font-medium text-gray-900">
-                      Engagement
-                    </span>
-                  </a>
-
-                  <a
-                    href="#"
-                    tw="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                  >
-                    <svg
-                      tw="flex-shrink-0 h-6 w-6 text-blue-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                      />
-                    </svg>
-                    <span tw="ml-3 text-base font-medium text-gray-900">
-                      Security
-                    </span>
-                  </a>
-
-                  <a
-                    href="#"
-                    tw="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                  >
-                    <svg
-                      tw="flex-shrink-0 h-6 w-6 text-blue-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                      />
-                    </svg>
-                    <span tw="ml-3 text-base font-medium text-gray-900">
-                      Integrations
-                    </span>
-                  </a>
-
-                  <a
-                    href="#"
-                    tw="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                  >
-                    <svg
-                      tw="flex-shrink-0 h-6 w-6 text-blue-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                      />
-                    </svg>
-                    <span tw="ml-3 text-base font-medium text-gray-900">
-                      Automations
-                    </span>
-                  </a>
-                </nav>
-              </div>
-            </div>
-            <div tw="py-6 px-5 space-y-6">
-              <div tw="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a
-                  href="#"
-                  tw="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Pricing
-                </a>
-
-                <a
-                  href="#"
-                  tw="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Docs
-                </a>
-
-                <a
-                  href="#"
-                  tw="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Enterprise
-                </a>
-
-                <a
-                  href="#"
-                  tw="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Blog
-                </a>
-
-                <a
-                  href="#"
-                  tw="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Help Center
-                </a>
-
-                <a
-                  href="#"
-                  tw="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Guides
-                </a>
-
-                <a
-                  href="#"
-                  tw="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Security
-                </a>
-
-                <a
-                  href="#"
-                  tw="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Events
-                </a>
-              </div>
-              <div>
-                <a
-                  href="#"
-                  tw="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
-                >
-                  Sign up
-                </a>
-                <p tw="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?
-                  <a href="#" tw="text-blue-600 hover:text-blue-500">
-                    Sign in
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div tw="bg-gradient-to-b from-blue-50 via-white to-white">
@@ -366,12 +110,17 @@ const Index: React.FC = () => (
                 unlimited users.
               </p>
             </div>
-            <a
-              href="#"
-              tw="mt-8 w-full bg-blue-600 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 sm:mt-10 sm:w-auto xl:mt-0"
-            >
-              Get started today
-            </a>
+            <div tw="flex flex-col">
+              <Button href="#" isPrimary>
+                Get started today
+              </Button>
+              <Button href="#" isSecondary>
+                Get started today
+              </Button>
+              <Button href="#" isPrimary isSmall>
+                Get started today
+              </Button>
+            </div>
           </div>
           <div tw="border-t border-gray-200 pt-16 xl:grid xl:grid-cols-3 xl:gap-x-8">
             <div>
