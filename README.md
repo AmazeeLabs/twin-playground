@@ -35,10 +35,16 @@ Comparison done using unzipped chunks.
 
 | `tailwind` | `twin.macro`
 |---|---|
-| ![tailwind](./img/tailwind-chunks.png) | ![twin.macro](./img/twin-macro-chunks.png) |
+| <a href="./img/tailwind-chunks.png" target="_blank">![tailwind](./img/tailwind-chunks.png)</a> | <a href="./img/twin-macro-chunks.png" target="_blank">![twin.macro](./img/twin-macro-chunks.png)</a> |
 
 ### Lighthouse
 
 | `tailwind` | `twin.macro`
 |---|---|
-| ![tailwind](./img/tailwind-lighthouse.png) | ![twin.macro](./img/twin-macro-lighthouse.png) |
+| <a href="./img/tailwind-lighthouse.png" target="_blank">![tailwind](./img/tailwind-lighthouse.png)</a> | <a href="./img/twin-macro-lighthouse.png" target="_blank">![twin.macro](./img/twin-macro-lighthouse.png)</a> |
+
+### HAR
+
+| `tailwind` | `twin.macro`
+|---|---|
+| <a href="./img/tailwind-har.png" target="_blank">![tailwind](./img/tailwind-har.png)</a> | <a href="./img/twin-macro-har.png" target="_blank">![twin.macro](./img/twin-macro-har.png)</a> |
